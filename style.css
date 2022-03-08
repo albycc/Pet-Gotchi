@@ -1,0 +1,41 @@
+progress{
+    display:block;
+    height:20px;
+}
+
+.pet-image{
+    width:300px;
+    height:300px;
+}
+
+.message-box{
+    border: 2px dashed blue;
+    width:500px;
+    padding:30px 10px;
+    text-align: center;
+}
+
+ul.progress-fields{
+    list-style-type: none;
+}
+
+.center-align{
+    text-align: center;
+}
+
+#pet-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.pet-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:350px;
+    margin:15px;
+    padding:10px;
+    background-color: rgb(205, 247, 163);
+    border-radius: 15px;
+    box-sizing: border-box;
+}
