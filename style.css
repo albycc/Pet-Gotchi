@@ -35,7 +35,22 @@ div.pet-container{
     width:350px;
     margin:15px;
     padding:10px;
-    background-color: rgb(205, 247, 163);
     border-radius: 15px;
     box-sizing: border-box;
+}
+
+.lightGreen{
+    background-color: rgb(205, 247, 163);
+}
+
+.lightPink{
+    background-color: rgb(237, 183, 250);
+}
+
+.lightBlue{
+    background-color: rgb(167, 200, 243);
+}
+
+.lightYellow{
+    background-color: rgb(253, 248, 169);
 }

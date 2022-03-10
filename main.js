@@ -1,7 +1,19 @@
 const animalList = [];
 
-const animalTypeImages = ["kitten1.jpg", "kitten2.jpg", "puppy1.jpg", "duckling1.jpg"
+const animalTypeImages = ["kitten1.jpg", 
+    "kitten2.jpg", 
+    "puppy1.jpg", 
+    "duckling1.jpg", 
+    "puppy2.jpg",
+    "puppy3.jpg"
 ]
+
+const colorList = [
+    "lightGreen",
+    "lightPink",
+    "lightBlue",
+    "lightYellow"
+];
 
 const animalNameField = document.getElementById("animal-name-field");
 const animalDropDown = document.getElementById("animal-type-dropdown");
@@ -65,6 +77,9 @@ document.getElementById("add-btn").addEventListener("click", (e)=>{
     const id = animal.id;
     const animalTypePictures = animalTypeImages.filter(img => img.includes(selectedType));
 
+    console.log(animalTypePictures);
+    console.log(Math.floor(Math.random() * animalTypePictures.length ));
+
     let animalPicture = animalTypePictures[Math.floor(Math.random() * animalTypePictures.length )];
     if(!animalPicture){
         animalPicture = "error.jpg";
@@ -72,6 +87,7 @@ document.getElementById("add-btn").addEventListener("click", (e)=>{
 
     const animalElement = document.createElement("div");
     animalElement.className = "pet-container";
+    animalElement.classList.add(colorList[Math.floor(Math.random() * colorList.length )])
 
     animalElement.innerHTML = `
         <h2 class="center-align">${animal.name}</h2>
